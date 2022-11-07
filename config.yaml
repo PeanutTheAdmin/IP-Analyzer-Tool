@@ -1,0 +1,16 @@
+abuseipdb: your_api_key_goes_here
+abuseipdb_enabled: true
+alienvault: your_api_key_goes_here
+alienvault_enabled: true
+analyzers:
+- abuseipdb
+- alienvault
+- greynoise
+- virustotal
+- pulsedive
+greynoise: your_api_key_goes_here
+greynoise_enabled: true
+pulsedive: your_api_key_goes_here
+pulsedive_enabled: true
+virustotal: your_api_key_goes_here
+virustotal_enabled: true

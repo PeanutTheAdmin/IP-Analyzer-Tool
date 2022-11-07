@@ -1,0 +1,39 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+### Added
+- New things added here.
+
+### Changed
+- Changed things go here.
+
+### Removed
+- Removed things go here.
+
+## [1.0.3] - 2022-11-07
+### Added
+- Searched IP Address shows at the top of the reporting list.
+- Version label added to the Help/About page with a clickable Github link to IP-Analyzer-Tool repository.
+
+### Changed
+- Under the Help/About page, alternated the color orange and blue for text links.
+
+## [1.0.2] - 2022-08-12
+### Changed
+- Fixed bug in pulsedive_analyzer.py in alt_abuse_emails function so if no emails were found it would return N/A.
+
+## [1.0.1] - 2022-08-12
+### Added
+- Added changelog.txt to track changes.
+- Included app.py which is the tkinter application.
+
+### Changed
+- Fixed a bug in pulsedive_analyzer.py in get_abuse_emails function, when there was no get_abuse_emails returned it would fail to execute the alt_abuse_emails query.
+
+## [1.0.0] - 2022-08-09
+### Added
+- First Initial Release.
