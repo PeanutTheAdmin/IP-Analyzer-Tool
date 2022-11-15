@@ -69,10 +69,13 @@ def get_tags(data):
                 raw_list[c] = raw_list[c].lower()
     filtered_list = [*set(raw_list)] # filters out duplicates in list
     filtered_list.sort() # Sorts list from A-Z
-    if filtered_list[0] == '': # Simple way to remove the first index if it contains nothing, just a quick way to clean the list
-        filtered_list.pop(0)
-    filtered_tags = ', '.join(map(str, filtered_list)) # Converts the list into a string seperated by commas
-    return filtered_tags
+    if len(filtered_list) < 1: # Checks to see if list is empty, meaning that there are no tags to return
+        return 'None'
+    else:
+        if filtered_list[0] == '': # Simple way to remove the first index if it contains nothing, just a quick way to clean the list
+            filtered_list.pop(0)
+        filtered_tags = ', '.join(map(str, filtered_list)) # Converts the list into a string seperated by commas
+        return filtered_tags
 
 def which_source(source):
     if source == 'cdn':
