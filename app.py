@@ -404,7 +404,7 @@ class AboutPage(tk.Frame):
         # self.input_label.grid(row=1, column=0, padx=(150, 0), pady=(0, 40))
 
         # Version Information
-        self.version_label = tk.Label(self.about_frame, text='Version: 1.0.3', bg='grey', fg='white', font=('Calibri', 12))
+        self.version_label = tk.Label(self.about_frame, text='Version: 1.0.4', bg='grey', fg='white', font=('Calibri', 12))
         self.version_label.grid(row=1, column=0, padx=(150, 0), pady=(0, 40))
         self.version_label.bind('<Button-1>', lambda e: self.open_url('https://github.com/PeanutTheAdmin/IP-Analyzer-Tool'))
         self.version_label_tooltip = Hovertip(self.version_label, 'Github Link: https://github.com/PeanutTheAdmin/IP-Analyzer-Tool')
