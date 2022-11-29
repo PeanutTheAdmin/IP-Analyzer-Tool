@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Removed things go here.
 
+## [1.0.5] - 2022-11-15
+### Changed
+- Fixed an issue in the function filter_data of virustotal_analyzer when no network is found it returns N/A.
+
 ## [1.0.4] - 2022-11-15
 ### Changed
 - Fixed an issue in the function get_tags of alienvault_analyzer when no tags are found.
