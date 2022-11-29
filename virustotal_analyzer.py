@@ -44,7 +44,10 @@ def filter_data(data): # Filters data
         ip_address = data['data']['id']
         output = f"\n[-] VirusTotal\nIP Address {ip_address} is not a public IP Address\n"
     else:
-        network = f"Network: {data['data']['attributes']['network']}"
+        if 'network' in data['data']['attributes']:
+            network = f"Network: {data['data']['attributes']['network']}"
+        else:
+            network = "Network: N/A"
         harmless_report = f" - Harmless: {data['data']['attributes']['last_analysis_stats']['harmless']}"
         malicious_report = f" - Malicious: {data['data']['attributes']['last_analysis_stats']['malicious']}"
         suspicious_report = f" - Suspicious: {data['data']['attributes']['last_analysis_stats']['suspicious']}"
